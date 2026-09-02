@@ -284,6 +284,7 @@ h1 em, h2 em { color: var(--gold); font-style: normal; }
   .section-heading > p:last-child { margin-top: 1.5rem; }
   .project-card { display: flex; min-height: 0; padding: 1.35rem; flex-direction: column; }
   .project-card.featured { min-height: 0; }
+  .project-preview.logo-preview { background-position: center, center, 76% 18%; background-size: auto, auto, 72% auto; }
   .project-card.featured .card-kicker { margin-top: 8rem; }
   .card-kicker { margin-top: 2.4rem; }
   .project-card > a, .project-action { position: relative; left: auto; bottom: auto; width: fit-content; margin-top: auto; }
