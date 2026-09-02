@@ -54,14 +54,14 @@ export const projects = [
   },
   {
     type: 'Full-stack product',
-    status: 'Working prototype',
+    status: 'Live demo',
     title: 'Revive Portal',
     description: 'A private client workspace for project progress, milestones, next actions, and feedback—with real authentication and persisted data.',
     stack: ['React', 'Node.js', 'Express', 'SQLite', 'Integration tests'],
     preview: `${import.meta.env.BASE_URL}art/revive-portal-dashboard.webp`,
     previewKind: 'dashboard',
-    href: 'https://github.com/Wallas88/revive-portal',
-    action: 'View the repository',
+    href: 'https://revive-portal.onrender.com/',
+    action: 'Open the live demo',
   },
   {
     type: 'Business',
