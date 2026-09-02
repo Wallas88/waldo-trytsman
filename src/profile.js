@@ -60,7 +60,8 @@ export const projects = [
     stack: ['React', 'Node.js', 'Express', 'SQLite', 'Integration tests'],
     preview: `${import.meta.env.BASE_URL}art/revive-portal-dashboard.png`,
     previewKind: 'dashboard',
-    note: 'Repository prepared locally · publishing next',
+    href: 'https://github.com/Wallas88/revive-portal',
+    action: 'View the repository',
   },
   {
     type: 'Business',
@@ -78,3 +79,4 @@ export const principles = [
   ['Let personality earn its place', 'Humour and motion work best when the experience remains useful.'],
   ['Ship work that can evolve', 'A finished build should be understandable, portable, and maintainable.'],
 ]
+
