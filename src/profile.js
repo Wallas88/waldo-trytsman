@@ -58,7 +58,7 @@ export const projects = [
     title: 'Revive Portal',
     description: 'A private client workspace for project progress, milestones, next actions, and feedback—with real authentication and persisted data.',
     stack: ['React', 'Node.js', 'Express', 'SQLite', 'Integration tests'],
-    preview: `${import.meta.env.BASE_URL}art/revive-portal-dashboard.png`,
+    preview: `${import.meta.env.BASE_URL}art/revive-portal-dashboard.webp`,
     previewKind: 'dashboard',
     href: 'https://github.com/Wallas88/revive-portal',
     action: 'View the repository',
