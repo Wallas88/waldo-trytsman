@@ -104,7 +104,7 @@ h1 em, h2 em { color: var(--gold); font-style: normal; }
 .project-card h3, .ability-card h3, .principle-list h3 { font: 500 1.35rem var(--display); letter-spacing: -.025em; }
 .project-card > p:not(.card-kicker), .ability-card p, .principle-list p { color: var(--muted); }
 .tag-list, .ability-tools { display: flex; flex-wrap: wrap; gap: .45rem; padding: 0; list-style: none; }
-.tag-list li, .ability-tools li { padding: .25rem .55rem; color: #b7c7ba; border: 1px solid var(--line); font: .63rem var(--mono); }
+.tag-list li, .ability-tools li { padding: .25rem .55rem; color: #b7c7ba; border: 1px solid var(--line); border-radius: 6px; font: .63rem var(--mono); }
 .project-card > a, .project-action { position: absolute; z-index: 1; left: clamp(1.5rem, 3vw, 3rem); bottom: 2.4rem; padding: .55rem .75rem; color: var(--ink); background: rgba(255,255,255,.025); border: 1px solid rgba(255,255,255,.16); border-radius: var(--button-radius); font: .72rem var(--mono); text-decoration: none; }
 .project-note { position:absolute; z-index:1; left:clamp(1.5rem,3vw,3rem); bottom:2.4rem; color:#a7b7aa; font:.62rem var(--mono); }
 .project-action { cursor: pointer; }
