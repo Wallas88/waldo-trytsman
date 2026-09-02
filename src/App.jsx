@@ -208,11 +208,11 @@ function SbbCaseStudy({ open, onToggle }) {
 
           <div className="comparison" aria-label="Original website and purchased redesign comparison">
             <figure>
-              <div className="browser-frame"><img src={`${base}art/sbb-original.png`} alt="Original SBB Software website before the redesign" loading="lazy" /></div>
+              <div className="browser-frame"><img src={`${base}art/sbb-original.webp`} alt="Original SBB Software website before the redesign" loading="lazy" /></div>
               <figcaption><span>Before</span><strong>Useful information without a strong narrative</strong></figcaption>
             </figure>
             <figure>
-              <div className="browser-frame"><img src={`${base}art/sbb-redesign-full.png`} alt="Purchased SBB Software redesign" loading="lazy" /></div>
+              <div className="browser-frame"><img src={`${base}art/sbb-redesign-full.webp`} alt="Purchased SBB Software redesign" loading="lazy" /></div>
               <figcaption><span>After</span><strong>A focused service experience built around trust</strong></figcaption>
             </figure>
           </div>
@@ -380,3 +380,4 @@ function App() {
 }
 
 export default App
+
