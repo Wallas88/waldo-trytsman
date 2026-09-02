@@ -10,6 +10,7 @@
   --acid: #bcff45;
   --gold: #ffd85b;
   --cyan: #69d9cc;
+  --button-radius: 15% 4px 15% 4px;
   --display: 'Unbounded', system-ui, sans-serif;
   --body: 'Manrope', system-ui, sans-serif;
   --mono: 'DM Mono', monospace;
@@ -43,9 +44,9 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .nav a.active { color: #101708; background: var(--acid); box-shadow: 0 0 24px rgba(188,255,69,.12); }
 .nav-sigil { width: 4px; height: 4px; background: currentColor; border-radius: 50%; opacity: .48; }
 .nav a.active .nav-sigil { box-shadow: 0 0 7px currentColor; opacity: 1; }
-.header-cta { display: inline-flex; align-items: center; gap: .55rem; min-height: 2.85rem; padding: .65rem .9rem; color: var(--gold); border: 1px solid rgba(255,216,91,.24); font: 500 .63rem var(--mono); text-decoration: none; text-transform: uppercase; letter-spacing: .06em; transition: .2s ease; }
+.header-cta { display: inline-flex; align-items: center; gap: .55rem; min-height: 2.85rem; padding: .65rem .9rem; color: var(--gold); border: 1px solid rgba(255,216,91,.24); border-radius: var(--button-radius); font: 500 .63rem var(--mono); text-decoration: none; text-transform: uppercase; letter-spacing: .06em; transition: .2s ease; }
 .header-cta:hover { color: #101708; background: var(--gold); border-color: var(--gold); }
-.menu { display: none; width: 2.8rem; height: 2.8rem; padding: .75rem; color: var(--ink); background: transparent; border: 1px solid rgba(255,255,255,.12); }
+.menu { display: none; width: 2.8rem; height: 2.8rem; padding: .75rem; color: var(--ink); background: transparent; border: 1px solid rgba(255,255,255,.12); border-radius: var(--button-radius); }
 .menu span { display: block; width: 100%; height: 1px; margin: 5px 0; background: currentColor; transition: .25s ease; }
 .menu[aria-expanded='true'] span:first-child { transform: translateY(3px) rotate(45deg); }
 .menu[aria-expanded='true'] span:last-child { transform: translateY(-3px) rotate(-45deg); }
@@ -65,7 +66,7 @@ h2 { margin-bottom: 1.5rem; font-size: clamp(2rem, 4.5vw, 4.5rem); }
 h1 em, h2 em { color: var(--gold); font-style: normal; }
 .hero-copy > p:not(.eyebrow) { max-width: 630px; color: #c3d0c5; font-size: clamp(1rem, 1.5vw, 1.22rem); }
 .hero-actions { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 2rem; }
-.button { display: inline-flex; align-items: center; justify-content: center; gap: .75rem; min-height: 3.2rem; padding: .75rem 1.15rem; border: 1px solid rgba(255,255,255,.18); font: 500 .73rem var(--mono); text-decoration: none; text-transform: uppercase; letter-spacing: .04em; transition: .25s ease; }
+.button { display: inline-flex; align-items: center; justify-content: center; gap: .75rem; min-height: 3.2rem; padding: .75rem 1.15rem; border: 1px solid rgba(255,255,255,.18); border-radius: var(--button-radius); font: 500 .73rem var(--mono); text-decoration: none; text-transform: uppercase; letter-spacing: .04em; transition: .25s ease; }
 .button.primary { color: #0b1308; background: var(--acid); border-color: var(--acid); }
 .button.ghost { background: rgba(4,12,9,.4); backdrop-filter: blur(10px); }
 .button:hover { transform: translateY(-2px); border-color: var(--acid); }
@@ -104,7 +105,7 @@ h1 em, h2 em { color: var(--gold); font-style: normal; }
 .project-card > p:not(.card-kicker), .ability-card p, .principle-list p { color: var(--muted); }
 .tag-list, .ability-tools { display: flex; flex-wrap: wrap; gap: .45rem; padding: 0; list-style: none; }
 .tag-list li, .ability-tools li { padding: .25rem .55rem; color: #b7c7ba; border: 1px solid var(--line); font: .63rem var(--mono); }
-.project-card > a, .project-action { position: absolute; z-index: 1; left: clamp(1.5rem, 3vw, 3rem); bottom: 2.4rem; padding: .55rem .75rem; color: var(--ink); background: rgba(255,255,255,.025); border: 1px solid rgba(255,255,255,.16); border-radius: 5px; font: .72rem var(--mono); text-decoration: none; }
+.project-card > a, .project-action { position: absolute; z-index: 1; left: clamp(1.5rem, 3vw, 3rem); bottom: 2.4rem; padding: .55rem .75rem; color: var(--ink); background: rgba(255,255,255,.025); border: 1px solid rgba(255,255,255,.16); border-radius: var(--button-radius); font: .72rem var(--mono); text-decoration: none; }
 .project-note { position:absolute; z-index:1; left:clamp(1.5rem,3vw,3rem); bottom:2.4rem; color:#a7b7aa; font:.62rem var(--mono); }
 .project-action { cursor: pointer; }
 .project-card > a:hover, .project-action:hover { color: var(--acid); background: rgba(188,255,69,.055); border-color: rgba(188,255,69,.4); }
