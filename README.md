@@ -1,6 +1,14 @@
 # Waldo Trytsman — Developer Portfolio
 
-A responsive full-stack developer portfolio built with React and Vite. It presents selected client work, a working full-stack product, technical capabilities, and the design principles behind the work.
+A responsive web developer portfolio built with React and Vite. It presents selected client redesign work, a working full-stack demo, and the design principles behind the work.
+
+## About Waldo
+
+I'm a web developer and the founder of SiteReviveSA, based in Pretoria. My strongest focus is front-end development with JavaScript, React, HTML, and CSS, including responsive website design and rebuilds.
+
+I'm developing my backend and database skills through structured learning, hands-on projects, and collaboration with a backend-focused developer. Revive Portal demonstrates that ongoing full-stack learning; it is a portfolio demo, not a production client service.
+
+Focus areas: front-end development, React, JavaScript, responsive web design, and web development.
 
 **Live site:** [wallas88.github.io/waldo-trytsman](https://wallas88.github.io/waldo-trytsman/)
 
