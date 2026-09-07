@@ -1,56 +1,57 @@
 // Keep personal facts here so the profile can evolve without redesigning it.
 export const profile = {
   name: "Waldo Trytsman",
-  role: "Frontend engineer building full-stack applications and AI-assisted products",
+  role: "Frontend engineer building toward full-stack and AI-enabled products",
   location: "Pretoria, South Africa · working worldwide",
   email: "revivewebsitedev@gmail.com",
   linkedin: "https://www.linkedin.com/in/waldo-trytsman-siterevivesa/",
   github: "https://github.com/Wallas88",
   business: "https://siterevivesa.com/",
   intro:
-    "I build user-focused web applications and digital products while growing deeper expertise in backend systems, automation, and AI-assisted software development.",
+    "I build thoughtful React interfaces and practical web applications while growing deeper into APIs, data, automation, and AI-enabled software. My strongest ground is frontend engineering; my direction is learning to understand and contribute across the whole product system.",
 };
 
 export const disciplines = [
   {
     code: "01",
-    title: "Frontend systems",
+    title: "Frontend engineering",
     summary:
-      "Responsive interfaces built around real content, clear state, and reusable components.",
-    tools: ["React", "JavaScript", "HTML", "CSS", "Vite", "Responsive UI"],
+      "React interfaces built around reusable components, responsive behaviour, clear state, accessible markup, and real content.",
+    tools: ["React", "JavaScript", "HTML", "CSS", "Vite", "Responsive UI", "Accessibility"],
   },
   {
     code: "02",
-    title: 'Full-stack systems',
+    title: "Full-stack foundations",
     summary:
-      "Server-side logic, APIs, data flows, authentication, and the connective tissue behind an application.",
+      "Practical experience connecting a frontend to APIs, authentication, persistence, and tests. Growing deeper into backend architecture through working projects.",
     tools: [
       "Node.js",
+      "Express",
       "REST APIs",
+      "SQLite",
       "Authentication",
-      "Data modelling",
-      "Integrations",
+      "Integration tests",
     ],
   },
   {
     code: "03",
-    title: "Product & design",
+    title: "Product thinking",
     summary:
-      "Structure, visual identity, interaction design, and direct language working as one system.",
+      "Turning unclear requirements into sensible structure, useful flows, clear content, and interfaces that people can understand.",
     tools: [
       "UX thinking",
-      "Design systems",
-      "Prototyping",
-      "Accessibility",
       "Content structure",
+      "Prototyping",
+      "Design systems",
+      "Accessibility",
     ],
   },
   {
     code: "04",
-    title: "Delivery",
+    title: "Shipping practice",
     summary:
-      "Performance, search foundations, deployment, testing, and responsible handover.",
-    tools: ["Git", "Netlify", "SEO", "Performance", "QA", "Documentation"],
+      "The habits that help a project leave the screen: version control, QA, performance checks, deployment, documentation, and maintainable handover.",
+    tools: ["Git", "Netlify", "GitHub Actions", "SEO foundations", "Performance", "Documentation"],
   },
 ];
 
@@ -60,7 +61,7 @@ export const projects = [
     status: "Deployment pending",
     title: "SBB Software",
     description:
-      "A complete redesign for an experienced software engineer: sharper positioning, clearer services, stronger trust signals, and a focused contact journey.",
+      "A full visual and content redesign for an experienced software engineer: clearer positioning, easier-to-understand services, and a more direct contact journey.",
     stack: ["React", "Vite", "Responsive UI", "Content strategy"],
     href: "#sbb-case-study",
     action: "Open the case study",
@@ -70,12 +71,13 @@ export const projects = [
     caseStudy: true,
   },
   {
-    type: "Full-stack product",
+    type: "Full-stack portfolio product",
     status: "Live demo",
     title: "Revive Portal",
     description:
-      "A private client workspace for project progress, milestones, next actions, and feedback—with real authentication and persisted data.",
+      "A portfolio-built client workspace for project progress, milestones, feedback, and next actions. I built the React interface, Express API, authentication flow, SQLite persistence, and integration tests.",
     stack: ["React", "Node.js", "Express", "SQLite", "Integration tests"],
+    note: "Portfolio demonstration, not a production client service.",
     preview: `${import.meta.env.BASE_URL}art/revive-portal-dashboard.webp`,
     previewKind: "dashboard",
     href: "https://revive-portal.onrender.com/",
@@ -85,7 +87,7 @@ export const projects = [
     type: "Business",
     title: "SiteReviveSA",
     description:
-      "A website design and development business built around clear outcomes, honest scope, and direct collaboration.",
+      "The website design and development business I run, focused on responsive implementation, clear outcomes, honest scope, and direct collaboration.",
     stack: ["React", "Vite", "SSR prerendering", "Netlify"],
     href: "https://siterevivesa.com/",
     action: "Visit the business",
