@@ -58,10 +58,10 @@ export const disciplines = [
 export const projects = [
   {
     type: "Client redesign · Purchased",
-    status: "Deployment pending",
+    status: "Concept sold · client restyling",
     title: "SBB Software",
     description:
-      "A full visual and content redesign for an experienced software engineer: clearer positioning, easier-to-understand services, and a more direct contact journey.",
+      "A full visual and content redesign concept for an experienced software engineer: clearer positioning, easier-to-understand services, and a more direct contact journey. Purchased as the foundation for her own restyled site.",
     stack: ["React", "Vite", "Responsive UI", "Content strategy"],
     href: "#sbb-case-study",
     action: "Open the case study",

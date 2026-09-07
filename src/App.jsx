@@ -201,7 +201,7 @@ function SbbCaseStudy({ open, onToggle }) {
             <p>Repositioned an experienced software engineer’s dated informational website into a focused, responsive service experience—clarifying her expertise, strengthening trust, and shortening the route from interest to contact.</p>
             <dl>
               <div><dt>Role</dt><dd>Strategy, UX, visual design &amp; frontend</dd></div>
-              <div><dt>Status</dt><dd>Purchased · deployment pending</dd></div>
+              <div><dt>Status</dt><dd>Concept purchased · client restyling for launch</dd></div>
               <div><dt>Build</dt><dd>React · Vite · responsive CSS</dd></div>
             </dl>
           </header>
@@ -213,7 +213,7 @@ function SbbCaseStudy({ open, onToggle }) {
             </figure>
             <figure>
               <div className="browser-frame"><img src={`${base}art/sbb-redesign-full.webp`} alt="Purchased SBB Software redesign" loading="lazy" /></div>
-              <figcaption><span>After</span><strong>A focused service experience built around trust</strong></figcaption>
+              <figcaption><span>After</span><strong>The purchased concept — she's making it her own</strong></figcaption>
             </figure>
           </div>
 
@@ -225,7 +225,7 @@ function SbbCaseStudy({ open, onToggle }) {
           </div>
 
           <footer className="case-outcome">
-            <div><small>The result</small><p>A responsive, credible presentation that sells the specialist behind the software—not merely the software itself.</p></div>
+            <div><small>The result</small><p>A concept she found compelling enough to buy and adapt—proof the redesign direction landed, even before her own version ships.</p></div>
             <a className="button ghost" href="https://salomebecker.co.za/" target="_blank" rel="noreferrer">View current live site (before) <Arrow /></a>
           </footer>
         </div>
