@@ -226,7 +226,10 @@ function SbbCaseStudy({ open, onToggle }) {
 
           <footer className="case-outcome">
             <div><small>The result</small><p>A concept she found compelling enough to buy and adapt—proof the redesign direction landed, even before her own version ships.</p></div>
-            <a className="button ghost" href="https://salomebecker.co.za/" target="_blank" rel="noreferrer">View current live site (before) <Arrow /></a>
+            <div className="case-outcome-links">
+              <a className="button" href="https://wallas88.github.io/sbb-redesign/" target="_blank" rel="noreferrer">View the purchased redesign (live) <Arrow /></a>
+              <a className="button ghost" href="https://salomebecker.co.za/" target="_blank" rel="noreferrer">View current live site (before) <Arrow /></a>
+            </div>
           </footer>
         </div>
       </details>
