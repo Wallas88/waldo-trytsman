@@ -1,7 +1,7 @@
 // Keep personal facts here so the profile can evolve without redesigning it.
 export const profile = {
   name: "Waldo Trytsman",
-  role: "Frontend developer building toward full-stack and AI-enabled products",
+  role: "Frontend engineer building toward full-stack and AI-enabled products",
   location: "Pretoria, South Africa · working worldwide",
   email: "revivewebsitedev@gmail.com",
   linkedin: "https://www.linkedin.com/in/waldo-trytsman-siterevivesa/",

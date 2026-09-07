@@ -145,7 +145,7 @@ function Hero() {
       <div className="hero-vignette" />
       <div className="hero-copy">
         <p className="eyebrow"><span className="status-dot" /> The gate is open</p>
-        <h1>Frontend developer.<br /><em>Uncommon</em> point of view.</h1>
+        <h1>Frontend engineer.<br /><em>Uncommon</em> point of view.</h1>
         <p>{profile.intro}</p>
         <div className="hero-actions">
           <a className="button primary" href="#work">Explore the work <span aria-hidden="true">↓</span></a>
