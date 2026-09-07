@@ -1,14 +1,14 @@
 // Keep personal facts here so the profile can evolve without redesigning it.
 export const profile = {
   name: "Waldo Trytsman",
-  role: "Frontend engineer building toward full-stack and AI-enabled products",
+  role: "Frontend developer building toward full-stack and AI-enabled products",
   location: "Pretoria, South Africa · working worldwide",
   email: "revivewebsitedev@gmail.com",
   linkedin: "https://www.linkedin.com/in/waldo-trytsman-siterevivesa/",
   github: "https://github.com/Wallas88",
   business: "https://siterevivesa.com/",
   intro:
-    "I build thoughtful React interfaces and practical web applications while growing deeper into APIs, data, automation, and AI-enabled software. My strongest ground is frontend engineering; my direction is learning to understand and contribute across the whole product system.",
+    "I build thoughtful React interfaces and practical web applications while learning backend development as I go. My work is growing from frontend into APIs, data, automation, and AI-enabled software, with each project helping me understand more of the whole product system.",
 };
 
 export const disciplines = [
