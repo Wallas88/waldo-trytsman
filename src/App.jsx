@@ -145,7 +145,7 @@ function Hero() {
       <div className="hero-vignette" />
       <div className="hero-copy">
         <p className="eyebrow"><span className="status-dot" /> The gate is open</p>
-        <h1>Full-stack developer.<br /><em>Uncommon</em> point of view.</h1>
+        <h1>Frontend developer.<br /><em>Uncommon</em> point of view.</h1>
         <p>{profile.intro}</p>
         <div className="hero-actions">
           <a className="button primary" href="#work">Explore the work <span aria-hidden="true">↓</span></a>
@@ -303,7 +303,7 @@ function App() {
           <div className="lore-copy">
             <p className="eyebrow">Behind the pixels</p>
             <h2>Serious about the work.<br /><em>Not solemn about it.</em></h2>
-            <p>I’m {profile.name}, a developer and designer based in Pretoria. I care about the full journey from a vague idea to a dependable product—and I believe technically sound work can still have a sense of humour.</p>
+            <p>I’m {profile.name}, a frontend developer and designer based in Pretoria. React and frontend development are my strongest ground; I’m learning backend systems as I go through projects like Revive Portal, moving deeper into APIs, data, authentication, testing, automation, and AI-enabled workflows. I believe technically sound work can still have a sense of humour.</p>
             <dl>
               <div><dt>Base</dt><dd>{profile.location}</dd></div>
               <div><dt>Business</dt><dd><a href={profile.business}>SiteReviveSA <Arrow /></a></dd></div>
