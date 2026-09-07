@@ -143,6 +143,7 @@ h1 em, h2 em { color: var(--gold); font-style: normal; }
 .case-decisions p { color: var(--muted); font-size: .86rem; }
 .case-outcome { display: flex; align-items: center; justify-content: space-between; gap: 2rem; margin-top: 3rem; padding: 2rem; background: rgba(188,255,69,.05); border: 1px solid var(--line); }
 .case-outcome p { max-width: 700px; margin: .5rem 0 0; }
+.case-outcome-links { display: flex; flex-wrap: wrap; gap: .85rem; flex-shrink: 0; }
 
 .abilities { border-top: 1px solid var(--line); }
 .ability-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
