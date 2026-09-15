@@ -145,7 +145,7 @@ function Hero() {
       <div className="hero-vignette" />
       <div className="hero-copy">
         <p className="eyebrow"><span className="status-dot" /> The gate is open</p>
-        <h1>Frontend engineer.<br /><em>Uncommon</em> point of view.</h1>
+        <h1>Web developer.<br /><em>Uncommon</em> point of view.</h1>
         <p>{profile.intro}</p>
         <div className="hero-actions">
           <a className="button primary" href="#work">Explore the work <span aria-hidden="true">↓</span></a>
@@ -306,7 +306,7 @@ function App() {
           <div className="lore-copy">
             <p className="eyebrow">Behind the pixels</p>
             <h2>Serious about the work.<br /><em>Not solemn about it.</em></h2>
-            <p>I’m {profile.name}, a frontend developer and designer based in Pretoria. React and frontend development are my strongest ground; I’m learning backend systems as I go through projects like Revive Portal, moving deeper into APIs, data, authentication, testing, automation, and AI-enabled workflows. I believe technically sound work can still have a sense of humour.</p>
+            <p>I’m {profile.name}, a web developer and designer based in Pretoria, and the founder of SiteReviveSA. React and front-end work are my strongest ground; the goal is to be a backend developer as well, and I’m learning that in the open — through Revive Portal, client admin tools with a database behind them, and team work with a backend-focused developer: APIs, data, authentication, testing, automation and AI-assisted workflows. I believe technically sound work can still have a sense of humour.</p>
             <dl>
               <div><dt>Base</dt><dd>{profile.location}</dd></div>
               <div><dt>Business</dt><dd><a href={profile.business}>SiteReviveSA <Arrow /></a></dd></div>

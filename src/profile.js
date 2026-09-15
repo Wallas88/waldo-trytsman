@@ -1,14 +1,14 @@
 // Keep personal facts here so the profile can evolve without redesigning it.
 export const profile = {
   name: "Waldo Trytsman",
-  role: "Frontend engineer building toward full-stack and AI-enabled products",
+  role: "Web developer and founder of SiteReviveSA, learning backend engineering to become a full-stack developer",
   location: "Pretoria, South Africa · working worldwide",
   email: "revivewebsitedev@gmail.com",
   linkedin: "https://www.linkedin.com/in/waldo-trytsman-siterevivesa/",
   github: "https://github.com/Wallas88",
   business: "https://siterevivesa.com/",
   intro:
-    "I build thoughtful React interfaces and practical web applications while learning backend development as I go. My work is growing from frontend into APIs, data, automation, and AI-enabled software, with each project helping me understand more of the whole product system.",
+    "I run SiteReviveSA, where I design, build and host websites for small businesses in South Africa. Front end is my strongest ground; the goal is to be as strong on the backend, so I'm learning it on real work: Node APIs and databases, authentication, admin tools clients use every day — with AI-assisted workflows that let a one-person studio ship like a team.",
 };
 
 export const disciplines = [
@@ -23,7 +23,7 @@ export const disciplines = [
     code: "02",
     title: "Full-stack foundations",
     summary:
-      "Practical experience connecting a frontend to APIs, authentication, persistence, and tests. Growing deeper into backend architecture through working projects.",
+      "Front ends wired to real APIs, authentication, persistence and tests — Revive Portal, client admin tools with a database behind them, team work alongside a backend-focused developer. Backend is the skill I'm building on purpose, one working project at a time.",
     tools: [
       "Node.js",
       "Express",
@@ -51,7 +51,7 @@ export const disciplines = [
     title: "Shipping practice",
     summary:
       "The habits that help a project leave the screen: version control, QA, performance checks, deployment, documentation, and maintainable handover.",
-    tools: ["Git", "Netlify", "GitHub Actions", "SEO foundations", "Performance", "Documentation"],
+    tools: ["Git", "Netlify", "Cloudflare Workers", "GitHub Actions", "SEO foundations", "Performance", "Documentation"],
   },
 ];
 
@@ -84,11 +84,20 @@ export const projects = [
     action: "Open the live demo",
   },
   {
+    type: "Client rebuild · Live",
+    status: "Live client site",
+    title: "A training academy",
+    description:
+      "A live WordPress site for a SETA-accredited training academy: custom theme and plugin, a 117-course catalogue with accreditation data, category landing pages, sitemap and PAIA manual. Client-editable; built and launched by me.",
+    stack: ["WordPress", "Custom theme", "Custom plugin", "SEO foundations"],
+    note: "Client name withheld by agreement.",
+  },
+  {
     type: "Business",
     title: "SiteReviveSA",
     description:
-      "The website design and development business I run, focused on responsive implementation, clear outcomes, honest scope, and direct collaboration.",
-    stack: ["React", "Vite", "SSR prerendering", "Netlify"],
+      "The web studio I run: rebuilds of dated sites, new one-page and multi-page sites, and hosting and care afterwards — for small businesses that need a site that works, scoped and priced honestly.",
+    stack: ["React", "Vite", "SSR prerendering", "Netlify", "Cloudflare Workers"],
     href: "https://siterevivesa.com/",
     action: "Visit the business",
   },
