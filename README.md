@@ -1,6 +1,6 @@
 # Waldo Trytsman — Developer Portfolio
 
-A responsive web developer portfolio built with React and Vite. It presents selected client redesign work, a working full-stack demo, and the design principles behind the work.
+A responsive web developer portfolio built with React and Vite. It presents live client work (with the client's own words), a purchased redesign concept, the client portal I run, and the design principles behind the work.
 
 ## About Waldo
 

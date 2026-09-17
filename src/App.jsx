@@ -169,6 +169,12 @@ function ProjectCard({ project, index, onOpenCaseStudy }) {
       {project.status && <span className="project-status"><i />{project.status}</span>}
       <h3>{project.title}</h3>
       <p>{project.description}</p>
+      {project.quote && (
+        <figure className="project-quote">
+          <blockquote>“{project.quote.text}”</blockquote>
+          <figcaption>— {project.quote.by}</figcaption>
+        </figure>
+      )}
       <ul className="tag-list" aria-label={`${project.title} technologies`}>
         {project.stack.map((item) => <li key={item}>{item}</li>)}
       </ul>

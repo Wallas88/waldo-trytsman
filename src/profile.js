@@ -57,6 +57,25 @@ export const disciplines = [
 
 export const projects = [
   {
+    type: "Client rebuild · Live",
+    status: "Live client site",
+    title: "Phezulu Academy",
+    description:
+      "A live WordPress site for a SETA-accredited training academy: custom theme and plugin, a 117-course catalogue with accreditation data, category landing pages, sitemap and PAIA manual. Client-editable; built, launched and looked after by me.",
+    // The bolded line from their signed testimonial (16 Sep 2026). Company
+    // name only — no person named, per their consent.
+    quote: {
+      text: "We would highly recommend SiteReviveSA to any business looking for a professional, creative and reliable website development partner.",
+      by: "Phezulu Academy",
+    },
+    stack: ["WordPress", "Custom theme", "Custom plugin", "SEO foundations"],
+    preview: `${import.meta.env.BASE_URL}art/phezulu-academy.webp`,
+    previewKind: "dashboard",
+    featured: true,
+    href: "https://www.phezuluacademy.co.za/",
+    action: "Visit the live site",
+  },
+  {
     type: "Client redesign · Purchased",
     status: "Concept sold · client restyling",
     title: "SBB Software",
@@ -71,26 +90,17 @@ export const projects = [
     caseStudy: true,
   },
   {
-    type: "Full-stack portfolio product",
-    status: "Live demo",
+    type: "Full-stack product · In use",
+    status: "Client portal",
     title: "Revive Portal",
     description:
-      "A portfolio-built client workspace for project progress, milestones, feedback, and next actions. I built the React interface, Express API, authentication flow, SQLite persistence, and integration tests.",
-    stack: ["React", "Node.js", "Express", "SQLite", "Integration tests"],
-    note: "Portfolio demonstration, not a production client service.",
+      "The client portal behind my projects: invitation-only accounts, per-project access, milestones, versioned deliverables with approve / request-changes decisions and their history, messages and private files. React on an Express API with SQLite, cookie sessions, CSRF protection and 27 integration tests — designed, built and run by me.",
+    stack: ["React", "Node.js", "Express", "SQLite", "Auth & permissions", "Integration tests"],
     preview: `${import.meta.env.BASE_URL}art/revive-portal-dashboard.webp`,
     previewKind: "dashboard",
-    href: "https://revive-portal.onrender.com/",
-    action: "Open the live demo",
-  },
-  {
-    type: "Client rebuild · Live",
-    status: "Live client site",
-    title: "A training academy",
-    description:
-      "A live WordPress site for a SETA-accredited training academy: custom theme and plugin, a 117-course catalogue with accreditation data, category landing pages, sitemap and PAIA manual. Client-editable; built and launched by me.",
-    stack: ["WordPress", "Custom theme", "Custom plugin", "SEO foundations"],
-    note: "Client name withheld by agreement.",
+    // Clients sign in by invitation, so there is no public demo login — the code is the open part.
+    href: "https://github.com/Wallas88/revive-portal",
+    action: "See the code",
   },
   {
     type: "Business",

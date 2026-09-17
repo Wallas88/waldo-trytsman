@@ -81,7 +81,7 @@ h1 em, h2 em { color: var(--gold); font-style: normal; }
 .section-heading > p:last-child { color: var(--muted); }
 .section-heading.compact { display: block; max-width: 920px; }
 .project-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: .9rem; }
-.project-card { position: relative; min-height: 430px; padding: clamp(1.5rem, 3vw, 3rem); overflow: hidden; background: linear-gradient(150deg, rgba(16,38,28,.68), rgba(5,13,10,.9)); border: 1px solid var(--line); border-radius: 8px; }
+.project-card { position: relative; min-height: 430px; padding: clamp(1.5rem, 3vw, 3rem); padding-bottom: 6.5rem; /* room for the absolutely-positioned action link */ overflow: hidden; background: linear-gradient(150deg, rgba(16,38,28,.68), rgba(5,13,10,.9)); border: 1px solid var(--line); border-radius: 8px; }
 .project-card > * { position: relative; z-index: 1; }
 .project-card.featured { grid-column: span 2; min-height: 520px; background: #050b09; }
 .project-preview { position: absolute; z-index: 0; inset: 0; background: linear-gradient(90deg, rgba(3,8,7,.98) 0%, rgba(3,8,7,.82) 47%, rgba(3,8,7,.2) 100%), linear-gradient(0deg, #050b09 0%, transparent 60%), var(--preview) center / cover no-repeat; opacity: .82; transition: opacity .35s ease, transform .6s ease; }
@@ -90,6 +90,10 @@ h1 em, h2 em { color: var(--gold); font-style: normal; }
 .project-card.featured:hover .project-preview { opacity: 1; transform: scale(1.025); }
 .project-card.featured .card-kicker { margin-top: 10rem; }
 .project-card.featured > p:not(.card-kicker) { max-width: 620px; color: #c5d1c7; }
+/* A client's own words on a featured card — the one thing on the page I didn't write. */
+.project-quote { position: relative; z-index: 1; max-width: 620px; margin: .4rem 0 1.2rem; padding: 1rem 1.2rem; border-left: 2px solid var(--gold, #ffd45b); background: rgba(255,255,255,.035); }
+.project-quote blockquote { margin: 0; color: #edf6e5; font-size: 1.02rem; line-height: 1.55; font-style: italic; }
+.project-quote figcaption { margin-top: .5rem; color: var(--gold, #ffd45b); font-size: .78rem; letter-spacing: .06em; text-transform: uppercase; }
 .project-status { display: inline-flex; align-items: center; gap: .45rem; margin: 0 0 .85rem; padding: .27rem .55rem; color: var(--gold); background: rgba(255,216,91,.08); border: 1px solid rgba(255,216,91,.22); border-radius: 5px; font: .59rem var(--mono); text-transform: uppercase; letter-spacing: .08em; }
 .project-status i { width: 5px; height: 5px; background: var(--gold); border-radius: 50%; box-shadow: 0 0 9px rgba(255,216,91,.6); }
 .project-card::after { content: ''; position: absolute; right: -35%; bottom: -35%; width: 70%; aspect-ratio: 1; border: 1px solid rgba(188,255,69,.14); border-radius: 50%; box-shadow: 0 0 80px rgba(188,255,69,.06); transition: .4s ease; }
