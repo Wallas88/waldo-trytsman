@@ -1,14 +1,14 @@
 // Keep personal facts here so the profile can evolve without redesigning it.
 export const profile = {
   name: "Waldo Trytsman",
-  role: "Web developer and founder of SiteReviveSA, learning backend engineering to become a full-stack developer",
+  role: "Web developer and founder of SiteReviveSA, learning backend engineering on real projects",
   location: "Pretoria, South Africa · working worldwide",
   email: "revivewebsitedev@gmail.com",
   linkedin: "https://www.linkedin.com/in/waldo-trytsman-siterevivesa/",
   github: "https://github.com/Wallas88",
   business: "https://siterevivesa.com/",
   intro:
-    "I run SiteReviveSA, where I design, build and host websites for small businesses in South Africa. Front end is my strongest ground; the goal is to be as strong on the backend, so I'm learning it on real work: Node APIs and databases, authentication, admin tools clients use every day — with AI-assisted workflows that let a one-person studio ship like a team.",
+    "I run SiteReviveSA, where I design, build and host websites for small businesses. Front ends in React and TypeScript, served from Cloudflare's edge; WordPress where a client needs it. Front end is my strongest ground; the goal is to be as strong on the backend, so I'm learning it on real work: Node APIs and databases, authentication, admin tools clients use every day.",
 };
 
 export const disciplines = [
@@ -17,11 +17,11 @@ export const disciplines = [
     title: "Frontend engineering",
     summary:
       "React interfaces built around reusable components, responsive behaviour, clear state, accessible markup, and real content.",
-    tools: ["React", "JavaScript", "HTML", "CSS", "Vite", "Responsive UI", "Accessibility"],
+    tools: ["React", "TypeScript", "HTML", "CSS", "Vite", "Responsive UI", "Accessibility"],
   },
   {
     code: "02",
-    title: "Full-stack foundations",
+    title: "Backend foundations",
     summary:
       "Front ends wired to real APIs, authentication, persistence and tests — Revive Portal, client admin tools with a database behind them, team work alongside a backend-focused developer. Backend is the skill I'm building on purpose, one working project at a time.",
     tools: [
@@ -51,7 +51,7 @@ export const disciplines = [
     title: "Shipping practice",
     summary:
       "The habits that help a project leave the screen: version control, QA, performance checks, deployment, documentation, and maintainable handover.",
-    tools: ["Git", "Netlify", "Cloudflare Workers", "GitHub Actions", "SEO foundations", "Performance", "Documentation"],
+    tools: ["Git", "Cloudflare Workers", "Cloudflare DNS", "GitHub Actions", "SEO foundations", "Performance", "Documentation"],
   },
 ];
 
@@ -61,7 +61,7 @@ export const projects = [
     status: "Live client site",
     title: "Phezulu Academy",
     description:
-      "A live WordPress site for a SETA-accredited training academy: custom theme and plugin, a 117-course catalogue with accreditation data, category landing pages, sitemap and PAIA manual. Client-editable; built, launched and looked after by me.",
+      "A live WordPress site for a SETA-accredited training academy: custom theme and plugin, a 100-plus-course catalogue with accreditation data, category landing pages, sitemap and PAIA manual. Client-editable; built, launched and looked after by me.",
     // The bolded line from their signed testimonial (16 Sep 2026). Company
     // name only — no person named, per their consent.
     quote: {
@@ -90,8 +90,8 @@ export const projects = [
     caseStudy: true,
   },
   {
-    type: "Full-stack product · In use",
-    status: "Client portal",
+    type: "Client portal · Learning project",
+    status: "In use, invitation only",
     title: "Revive Portal",
     description:
       "The client portal behind my projects: invitation-only accounts, per-project access, milestones, versioned deliverables with approve / request-changes decisions and their history, messages and private files. React on an Express API with SQLite, cookie sessions, CSRF protection and 27 integration tests — designed, built and run by me.",
@@ -103,11 +103,21 @@ export const projects = [
     action: "See the code",
   },
   {
+    type: "Learning game · Public",
+    status: "Open source",
+    title: "Code Loop",
+    description:
+      "A small browser game I built to practise the basics I use every day: files, HTML, CSS and React. Thirty challenges across five trails plus a CSS playground with a live preview. Plain JavaScript, no dependencies, tests with node:test.",
+    stack: ["JavaScript", "HTML", "CSS", "node:test", "GitHub Pages"],
+    href: "https://wallas88.github.io/code-loop/",
+    action: "Play it",
+  },
+  {
     type: "Business",
     title: "SiteReviveSA",
     description:
-      "The web studio I run: rebuilds of dated sites, new one-page and multi-page sites, and hosting and care afterwards — for small businesses that need a site that works, scoped and priced honestly.",
-    stack: ["React", "Vite", "SSR prerendering", "Netlify", "Cloudflare Workers"],
+      "The web studio I run: rebuilds of dated sites, new one-page and multi-page sites, and managed hosting afterwards — for small businesses that need a site that works, scoped and priced honestly. The site itself is React and TypeScript, prerendered, on Cloudflare.",
+    stack: ["React", "TypeScript", "Vite", "Prerendered", "Cloudflare Workers"],
     href: "https://siterevivesa.com/",
     action: "Visit the business",
   },
