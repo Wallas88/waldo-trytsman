@@ -2,3 +2,7 @@ node_modules/
 dist/
 .DS_Store
 *.local
+
+# Working notes for this repo: local only, never on GitHub (22 Sep 2026).
+CLAUDE.md
+DEVELOPMENT.md
