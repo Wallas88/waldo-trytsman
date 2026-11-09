@@ -1,3 +1,8 @@
+# Deploys the portfolio to GitHub Pages. A push to main is the deploy, so the gate lives here: the check job
+# (audit, tests, secret scan over the whole history, Semgrep, build) must pass before the deploy job runs, and the
+# deploy job waits for the reviewer set on the github-pages environment (Waldo; Settings > Environments).
+# Installs come from pnpm-lock.yaml with the pnpm version package.json names. Every action is pinned to a commit
+# hash (tag in the comment), and only GitHub's own actions are used. tests/workflow.test.js pins this structure.
 name: Deploy portfolio to GitHub Pages
 
 on:
@@ -7,43 +12,93 @@ on:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 concurrency:
   group: pages
   cancel-in-progress: true
 
 jobs:
-  deploy:
+  check:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Check out repository, with its whole history for the secret scan
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Set up Node.js
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7
+        with:
+          node-version: 24
+
+      - name: Install pnpm (the version package.json names)
+        run: npm install --global pnpm@12.3.4
+
+      - name: Install dependencies from the lock file
+        run: pnpm install --frozen-lockfile
+
+      - name: Audit dependencies
+        run: pnpm audit --audit-level=moderate
+
+      - name: Run the tests
+        run: pnpm test
+
+      - name: Scan the whole history for secrets (gitleaks 8.30.1, checked against its published checksum)
+        run: |
+          curl -sSLO https://github.com/gitleaks/gitleaks/releases/download/v8.30.1/gitleaks_8.30.1_linux_x64.tar.gz
+          echo "551f6fc83ea457d62a0d98237cbad105af8d557003051f41f3e7ca7b3f2470eb  gitleaks_8.30.1_linux_x64.tar.gz" | sha256sum -c -
+          tar -xzf gitleaks_8.30.1_linux_x64.tar.gz gitleaks
+          ./gitleaks git --redact --no-banner --exit-code 1 .
+
+      - name: Scan the code with Semgrep (1.178.0)
+        run: |
+          pipx install semgrep==1.178.0
+          semgrep scan --config p/typescript --config p/javascript --config p/nodejsscan --config p/owasp-top-ten --config p/security-audit --error --metrics off --quiet
+
+      - name: Build portfolio
+        run: pnpm run build
+
+  deploy:
+    needs: check
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Check out repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
 
       - name: Set up Node.js
-        uses: actions/setup-node@v7
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7
         with:
-          node-version: lts/*
+          node-version: 24
 
-      - name: Install dependencies
-        run: npm install --no-audit --no-fund
+      - name: Install pnpm (the version package.json names)
+        run: npm install --global pnpm@12.3.4
+
+      - name: Install dependencies from the lock file
+        run: pnpm install --frozen-lockfile
 
       - name: Build portfolio
-        run: npm run build
+        run: pnpm run build
 
       - name: Configure GitHub Pages
-        uses: actions/configure-pages@v6
+        uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6
 
       - name: Upload site artifact
-        uses: actions/upload-pages-artifact@v5
+        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5
         with:
           path: dist
 
       - name: Deploy
         id: deployment
-        uses: actions/deploy-pages@v5
-
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5
