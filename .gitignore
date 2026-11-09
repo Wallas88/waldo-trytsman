@@ -2,6 +2,9 @@ node_modules/
 dist/
 .DS_Store
 *.local
+# Local secrets: nothing secret is ever committed to this public repo (audit gap 2, 9 Nov 2026).
+.env*
+.dev.vars
 
 # Working notes for this repo: local only, never on GitHub (22 Sep 2026).
 CLAUDE.md
